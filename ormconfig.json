@@ -1,11 +1,12 @@
 {
-    "type": "sqlite",
-    "database": "./database.sqlite",
-    "synchronize": "true",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "a",
+    "database": "TodoList",
     "entities": [
-        "dist/db/**/*.js"
+        "dist/**/**.entity{.ts,.js}"
     ],
-    "cli": {
-        "entitiesDir": "src/db"
-    }
+    "synchronize": true
 }
