@@ -1,12 +1,9 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export default class CreateBookDto {
+export default class CreateItemDto {
     @ApiProperty({ type: String })
     readonly name: string;
 
     @ApiProperty({ type: Number })
-    readonly userID: number;
-
-    @ApiProperty({ type: Array(Number) })
-    readonly genreIDs: number[];
+    readonly taskID: number;
 }

@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export default class CreateGenreDto {
+export default class CreateCategoryDto {
     @ApiProperty({ type: String })
-    readonly type: string;
+    readonly name: string;
 }
